@@ -147,7 +147,9 @@ xs2_connection.prototype.UnsubscribeFromMarket = function () { return this.try_i
 xs2_connection.prototype.GetCoin = function (CoinID) { return this.try_invoke('GetCoin', CoinID); };
 xs2_connection.prototype.GetTransparencyInfo = function () { return this.try_invoke('GetTransparencyInfo'); };
 
-var xs2 = new xs2_connection();
+exports.xs2_connection = xs2_connection;
+
+/*var xs2 = new xs2_connection();
 xs2.on("InfoPack", function (data) { console.log(data.length); });
 xs2.start().then(function () {
     xs2.GetTransparencyInfo().then(function (data) {
@@ -155,7 +157,6 @@ xs2.start().then(function () {
     });
 });
 
-
 setInterval(() => { }, 1 << 30);
-
+*/
 

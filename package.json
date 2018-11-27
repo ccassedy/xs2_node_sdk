@@ -1,5 +1,5 @@
 {
-  "name": "xs2_js_api",
+  "name": "xs2_node_sdk",
   "version": "1.0.0",
   "description": "Node API to the XS2 Exchange https://xs2.exchange",
   "main": "xs2_web_socket.js",
@@ -11,7 +11,7 @@
     "url": "git+https://github.com/xs2-exchange/xs2_node_sdk.git"
   },
   "author": "Bart Jellema (XS2 Exchange)",
-  "license": "ISC",
+  "license": "MIT",
   "bugs": {
     "url": "https://github.com/xs2-exchange/xs2_node_sdk/issues"
   },
@@ -20,5 +20,6 @@
     "@aspnet/signalr": "^1.0.4",
     "websocket": "^1.0.28",
     "xmlhttprequest": "^1.8.0"
-  }
+  },
+  "devDependencies": {}
 }
